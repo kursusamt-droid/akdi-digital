@@ -1683,7 +1683,7 @@ window.prepareRegister = () => {
 };
     
     
-    const SCRIPT_URL = "URL_WEB_APP_APPS_SCRIPT_LO_DISINI"; // GANTI DENGAN URL WEB APP LO
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwSzVhAUg81DH8h1iF_0pqipk9Gr4aATI9l0tuyuOjNYiqtiwNBmMPtWWzoLuw1SvNu/exec"; // GANTI DENGAN URL WEB APP LO
 
     window.showToast = (m, t = 'success') => {
         const el = document.getElementById('toast');
@@ -1710,7 +1710,7 @@ window.prepareRegister = () => {
 
    async function apiCall(action, payload = null) {
     // 🔒 GATES: Validasi otomatis yang pinter. Deteksi kalau masih pakai teks default bawaan template
-    if (!SCRIPT_URL || SCRIPT_URL.includes("URL_WEB_APP_APPS_SCRIPT_LO_DISINI") || SCRIPT_URL.trim() === "") {
+    if (!SCRIPT_URL || SCRIPT_URL.includes("https://script.google.com/macros/s/AKfycbwSzVhAUg81DH8h1iF_0pqipk9Gr4aATI9l0tuyuOjNYiqtiwNBmMPtWWzoLuw1SvNu/exec") || SCRIPT_URL.trim() === "") {
         window.showToast("Script URL belum diganti di baris konfigurasi atas ya bro!", "error");
         throw new Error("URL Belum disetting");
     }
