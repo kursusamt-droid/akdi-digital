@@ -1683,7 +1683,7 @@ window.prepareRegister = () => {
 };
     
     
-    const SCRIPT_URL = "URL_WEB_APP_APPS_SCRIPT_LO_DISINI"; // GANTI DENGAN URL WEB APP LO
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwSzVhAUg81DH8h1iF_0pqipk9Gr4aATI9l0tuyuOjNYiqtiwNBmMPtWWzoLuw1SvNu/exec"; // GANTI DENGAN URL WEB APP LO
 
     window.showToast = (m, t = 'success') => {
         const el = document.getElementById('toast');
@@ -1709,7 +1709,7 @@ window.prepareRegister = () => {
     };
 
     async function apiCall(action, payload = null) {
-    if (SCRIPT_URL === "URL_WEB_APP_APPS_SCRIPT_LO_DISINI" || !SCRIPT_URL) {
+    if (SCRIPT_URL === "https://script.google.com/macros/s/AKfycbwSzVhAUg81DH8h1iF_0pqipk9Gr4aATI9l0tuyuOjNYiqtiwNBmMPtWWzoLuw1SvNu/exec" || !SCRIPT_URL) {
         window.showToast("Script URL belum diganti di kode HTML!", "error");
         throw new Error("URL Belum disetting");
     }
